@@ -1,0 +1,83 @@
+header
+  width: 100%
+  height: 40px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid lightgrey
+
+.logo--small
+  margin-left: 50px
+  width: 100px
+  height: 40px
+  background-color: pink
+
+.main-nav
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  width: 35%
+
+  a
+    text-transform: uppercase
+    text-decoration: none
+    color: black
+    font-family: "Open sans", sans-serif
+    font-size: 14px
+    font-weight: 400
+    margin-right: 5px
+
+    &:hover
+      color: gold
+
+.social-links
+  width: 90px
+  height: auto
+  margin-right: 50px
+
+.fb-icon,
+.twitter-icon,
+.instagram-icon
+  width: 20px
+  height: 20px
+  margin-right: 4px
+  display: inline-block
+
+  &:hover
+    g
+      fill: gold
+    path
+      fill: gold
+
+.menu
+  display: none
+  width: 20%
+  text-align: center
+  a
+    text-transform: uppercase
+    text-decoration: none
+    color: black
+    font-family: "Open sans", sans-serif
+    font-size: 14px
+    font-weight: 400
+    &:hover
+      color: gold
+
+@media screen and (max-width: 775px)
+  .main-nav
+    width: 50%
+
+  .logo--small
+    margin-left: 20px
+
+  .social-links
+    margin-right: 20px
+
+@media screen and (max-width: 570px)
+  .main-nav
+    display: none
+
+  .menu
+    display: block
