@@ -1,0 +1,64 @@
+.articles
+  max-width: 1100px
+  margin: 0 auto
+  font-family: "Open sans", sans-serif
+  font-size: 67%
+  border-bottom: 1px solid lightgrey
+  padding-top: 50px
+  padding-bottom: 50px
+
+.article-mini
+  margin-top: 50px
+  margin-bottom: 50px
+  &:after
+    content: ""
+    clear: both
+    display: block
+
+.articles-images
+  width: 60%
+  float: left
+  margin: 0 25px 0 0
+
+  img
+    width: 100%
+    height: auto
+
+.comments-icon
+  background-color: pink
+  width: 20px
+  height: 20px
+  margin-right: 2px
+
+.articles-thumbnail
+  float: right
+  width: calc(40% - 25px)
+  padding: 40px 0 30px 0
+
+.author
+  font-size: 1.2em
+  font-weight: 400
+  text-transform: uppercase
+
+.articles-title
+  font-size: 3.5em
+  font-weight: 600
+  margin: 5px 0 5px 0
+
+.articles-caption
+  font-size: 1.7em
+  font-weight: 300
+
+.articles-footer
+  color: #ccc
+  font-size: 1.2em
+  font-weight: 400
+  text-transform: uppercase
+  display: flex
+  justify-content: flex-start
+  flex-flow: row
+  align-items: flex-start
+  letter-spacing: 0.2em
+
+  .date
+    margin-right: 15px
